@@ -1,13 +1,13 @@
 FROM xataz/alpine:3.5
 
 ARG MEDIAINFO_VER=0.7.92
-ARG EMBY_VER=3.2.1
+ARG EMBY_VER=3.2.4
 
 ENV GID=991 \
     UID=991
 
 LABEL description="Emby based on alpine" \
-      tags="latest 3.2.1 3.1 5" \
+      tags="latest" \
       maintainer="dracomilesx <https://github.com/dracomilesx>" \
       build_ver="2017021207"
 
