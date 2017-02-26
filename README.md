@@ -1,10 +1,9 @@
 # Emby Image
 
-> This image is build and push with [drone.io](https://github.com/drone/drone), a circle-ci like self-hosted.
-> If you don't trust, you can build yourself.
+Originally created by Xataz.
 
 ## Tag available
-* latest, 3.1.5, 3.1, 3 [(Dockerfile)](https://github.com/xataz/dockerfiles/blob/master/emby/Dockerfile)
+* latest
 
 ## Description
 What is [Emby](https://github.com/MediaBrowser/Emby) ?
@@ -17,9 +16,6 @@ It features a REST-based API with built-in documention to facilitate client deve
 
 ## Build Image
 
-```shell
-docker build -t xataz/emby github.com/xataz/dockerfiles.git#master:emby
-```
 
 ## Configuration
 ### Environments
@@ -46,7 +42,7 @@ docker run -d -p 8096 \
 	-v /docker/Media:/Media \
 	-e UID=1001 \
 	-e GID=1001 \
-	xataz/emby
+	dracomilesx/emby
 ```
 URI access : http://XX.XX.XX.XX:8096
 
